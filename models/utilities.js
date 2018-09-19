@@ -1,4 +1,4 @@
-let utilities = {};
+var utilities = {};
 
 module.exports = utilities;
 

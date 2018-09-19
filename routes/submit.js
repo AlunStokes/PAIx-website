@@ -6,7 +6,7 @@ var Aphid = require("../models/aphid");
 //var Plant = require("../models/plant");
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.post('/', function(req, res, next) {
   switch(req.body.category) {
     case "plant":
 

@@ -4,7 +4,5 @@ module.exports = function(req, res, next) {
     req.session.user = "Logged out";
   }
   Object.assign(res.locals, req.session);
-  console.log(res.locals)
-  console.log(req.session)
   next();
 }

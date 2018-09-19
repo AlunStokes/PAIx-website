@@ -15,7 +15,7 @@ router.get("/", function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   let  validID = ["alun", "mehrunnisa", "serena", "katarina", "juliette"];
-  if (inArray(req.body.user, validID)) {
+  if (Utilities.inArray(req.body.user, validID)) {
     req.session.user = req.body.user;
     res.locals.user = req.session.user;
     res.render('data', {title: "Enter Data"});
