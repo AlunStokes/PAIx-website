@@ -10,6 +10,7 @@ var index = require('./routes/index');
 var data = require('./routes/data');
 var category = require('./routes/category');
 var plant = require('./routes/plant');
+var general = require('./routes/general');
 var aphid = require('./routes/aphid');
 var leaf = require('./routes/leaf');
 var submit = require('./routes/submit');
@@ -44,6 +45,7 @@ app.use('/category', category);
 app.use('/plant', plant);
 app.use('/leaf', leaf);
 app.use('/aphid', aphid);
+app.use('/general', general);
 app.use('/submit', submit);
 
 // catch 404 and forward to error handler

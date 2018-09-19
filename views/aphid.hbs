@@ -3,11 +3,11 @@
 <form class="" action="submit" method="post">
   <input type="text" name="category" value="aphid" hidden>
   <label for="plant_id">Plant ID: </label>
-  <input type="number" name="plant_id" value="1" min="1" max="35" required>
+  <input type="number" name="plant_id" min="1" max="35" required>
   <br>
 
-  <label for="days">Days since experiment began: </label>
-  <input type="number" name="days" value="0" min="0" max="20" required>
+  <label for="day">Days since experiment began: </label>
+  <input type="number" name="day" value="{{daysSince}}" min="0" max="20" required>
   <br>
 
   <label for="location">Where is the aphid located? </label>

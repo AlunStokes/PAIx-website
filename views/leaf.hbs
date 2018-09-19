@@ -3,11 +3,11 @@
 <form class="" action="submit" method="post">
   <input type="text" name="category" value="leaf" hidden>
   <label for="plant_id">Plant ID: </label>
-  <input type="number" name="plant_id" value="1" min="1" max="35" required>
+  <input type="number" name="plant_id" min="1" max="35" required>
   <br>
 
-  <label for="days">Days since experiment began: </label>
-  <input type="number" name="days" value="0" min="0" max="20" required>
+  <label for="day">Days since experiment began: </label>
+  <input type="number" name="day" value="{{daysSince}}" min="0" max="20" required>
   <br>
 
   <label for="location">Where is the leaf located? </label>
@@ -19,11 +19,11 @@
   <br>
 
   <label for="leaf_length">Length of leaf tip from node (cm): </label>
-  <input type="number" name="leaf_length" value="0" min="0" max="100" required>
+  <input type="number" step="0.0001" name="leaf_length" min="0" max="100" required>
   <br>
 
   <label for="leaf_width">Width of leaf at widest point (cm): </label>
-  <input type="number" name="leaf_width" value="0" min="0" max="100" required>
+  <input type="number" step="0.0001" name="leaf_width" min="0" max="100" required>
   <br>
 
   <input type="submit" name="submit" value="Submit">

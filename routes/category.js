@@ -17,6 +17,9 @@ router.post('/', function(req, res, next) {
     case "leaf":
     res.redirect("leaf");
     break;
+    case "general":
+    res.redirect("general");
+    break;
     default:
     res.redirect("/");
   }
