@@ -1,0 +1,29 @@
+<a href="data">Go back</a>
+<h1>Leaf</h1>
+<form class="" action="submit" method="post">
+  <label for="plant-id">Plant ID: </label>
+  <input type="number" name="plant-id" value="1" min="1" max="35" required>
+  <br>
+
+  <label for="days">Days since experiment began: </label>
+  <input type="number" name="days" value="0" min="0" max="20" required>
+  <br>
+
+  <label for="location">Where is the leaf located? </label>
+  <select class="" id="" name="location" required>
+    <option value="base">Base</option>
+    <option value="stem">Stem</option>
+    <option value="tip">Tip</option>
+  </select>
+  <br>
+
+  <label for="length">Length of leaf tip from node (cm): </label>
+  <input type="number" name="length" value="0" min="0" max="100" required>
+  <br>
+
+  <label for="width">Width of leaf at widest point (cm): </label>
+  <input type="number" name="width" value="0" min="0" max="100" required>
+  <br>
+
+  <input type="submit" name="submit" value="Submit">
+</form>

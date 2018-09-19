@@ -1,0 +1,33 @@
+<a href="data">Go back</a>
+<h1>Plant</h1>
+
+<form class="" action="submit" method="post">
+  <label for="plant-id">Plant ID: </label>
+  <input type="number" name="plant-id" value="1" min="1" max="35" required>
+  <br>
+
+  <label for="days">Days since experiment began: </label>
+  <input type="number" name="days" value="0" min="0" max="20" required>
+  <br>
+
+  <label for="plant-height">Plant height (cm): </label>
+  <input type="number" name="plant-height" value="0" min="0" max="1000" required>
+  <br>
+
+  <label for="stem-width">Stem width at base (cm): </label>
+  <input type="number" name="stem-width" value="0" min="0" max="10" required>
+  <br>
+
+  <label for="splint">Does the plant have a splint? </label>
+  <select class="" id="" name="splint" required>
+    <option value="false">No</option>
+    <option value="true">Yes</option>
+  </select>
+  <br>
+
+  <label for="nitrogen-concentration">Nitrogen Concentration (M) - not required: </label>
+  <input type="number" name="nitrogen-concentration" value="" min="0" max="10">
+  <br>
+
+  <input type="submit" name="submit" value="Submit">
+</form>

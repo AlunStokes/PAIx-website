@@ -1,0 +1,24 @@
+<a href="data">Go back</a>
+<h1>Aphid</h1>
+<form class="" action="submit" method="post">
+  <label for="plant-id">Plant ID: </label>
+  <input type="number" name="plant-id" value="1" min="1" max="35" required>
+  <br>
+
+  <label for="days">Days since experiment began: </label>
+  <input type="number" name="days" value="0" min="0" max="20" required>
+  <br>
+
+  <label for="location">Where is the aphid located? </label>
+  <select class="" id="" name="location" required>
+    <option value="soil">Soil</option>
+    <option value="base">Base</option>
+    <option value="stem">Stem</option>
+    <option value="leaf-under">Leaf (Underneath)</option>
+    <option value="leaf-over">Leaf (On top)</option>
+    <option value="tip">Tip</option>
+  </select>
+  <br>
+
+  <input type="submit" name="submit" value="Submit">
+</form>
