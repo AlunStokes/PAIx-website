@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
+var Utilities = require("../models/utilities");
+
 /* GET home page. */
 router.get("/", function(req, res, next) {
   let  validID = ["alun", "mehrunnisa", "serena", "katarina", "juliette"]
-  if (inArray(req.session.user, validID)) {
+  if (Utilities.inArray(req.session.user, validID)) {
     res.render("data");
     return;
   }
@@ -25,12 +27,3 @@ router.post('/', function(req, res, next) {
 });
 
 module.exports = router;
-
-function inArray(s, a) {
-  for (let i = 0; i < a.length;  i++) {
-    if (a[i] == s) {
-      return true;
-    }
-  }
-  return false;
-}

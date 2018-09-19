@@ -12,6 +12,7 @@ var category = require('./routes/category');
 var plant = require('./routes/plant');
 var aphid = require('./routes/aphid');
 var leaf = require('./routes/leaf');
+var submit = require('./routes/submit');
 
 var sessionMiddleware = require("./middlewares/session");
 
@@ -43,6 +44,7 @@ app.use('/category', category);
 app.use('/plant', plant);
 app.use('/leaf', leaf);
 app.use('/aphid', aphid);
+app.use('/submit', submit);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
