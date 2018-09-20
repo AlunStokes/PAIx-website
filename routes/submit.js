@@ -19,7 +19,7 @@ router.post('/', function(req, res, next) {
       res.redirect("/plant");
     break;
     case "leaf":
-      Leaf.submit(req.body.plant_id,req.body.day, req.body.location, req.body.leaf_length, req.body.leaf_width, req.session.user);
+      Leaf.submit(req.body.plant_id,req.body.day, req.body.location, req.body.size, req.session.user);
       res.redirect("./leaf");
     break;
     case "aphid":
