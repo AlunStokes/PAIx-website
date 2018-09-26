@@ -23,7 +23,7 @@ router.post('/', function(req, res, next) {
       res.redirect("./leaf");
     break;
     case "aphid":
-      Aphid.submit(req.body.plant_id, req.body.day, req.body.location, req.session.user);
+      Aphid.submit(req.body.plant_id, req.body.day, req.body.location, req.body.num_aphids, req.session.user);
       res.redirect("/aphid");
     break;
     case "general":

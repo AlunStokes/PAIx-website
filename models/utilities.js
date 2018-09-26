@@ -10,3 +10,13 @@ utilities.inArray = function(s, a) {
   }
   return false;
 }
+
+utilities.minIDByProp = function(array, prop) {
+  let min = 0;
+  for (let i = 1; i < array.length; i++) {
+    if (array[i].prop < array[min].prop) {
+      min = i;
+    }
+  }
+  return i;
+}
